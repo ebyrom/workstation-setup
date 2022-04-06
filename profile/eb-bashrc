@@ -1,0 +1,62 @@
+#!/bin/bash
+
+# Path to the bash it configuration
+export BASH_IT="/Users/$USER/.bash_it"
+
+# Lock and Load a custom theme file.
+# Leave empty to disable theming.
+# location /.bash_it/themes/
+#export BASH_IT_THEME='bobby'
+export BASH_IT_THEME='bakke'
+
+# (Advanced): Change this to the name of your remote repo if you
+# cloned bash-it with a remote other than origin such as `bash-it`.
+# export BASH_IT_REMOTE='bash-it'
+
+# Your place for hosting Git repos. I use this for private repos.
+#export GIT_HOSTING='git@git.domain.com'
+
+# Don't check mail when opening terminal.
+unset MAILCHECK
+
+# Change this to your console based IRC client of choice.
+export IRC_CLIENT='irssi'
+
+# Set this to the command you use for todo.txt-cli
+#export TODO="t"
+
+# Set this to false to turn off version control status checking within the prompt for all themes
+export SCM_CHECK=true
+
+
+# Load Bash It
+if [ -f $BASH_IT/bash_it.sh ]; then
+  . $BASH_IT/bash_it.sh
+fi
+
+# USER Setup
+
+# For allowing reverse search forward - https://stackoverflow.com/questions/791765/unable-to-forward-search-bash-history-similarly-as-with-ctrl-r
+stty -ixon
+
+# Variables
+export HISTSIZE=10000
+export HISTFILESIZE=10000
+export HISTCONTROL=ignorespace:erasedups
+
+# Alias
+alias gh='history | grep '
+alias ll='ls -lart'
+
+# Java Setup (Mac Specific)
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+
+# Default java11
+java11
+
+
+
