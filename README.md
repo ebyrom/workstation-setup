@@ -12,19 +12,44 @@ For example:
 ./setup.sh
 ```
 
+# Brew installed items
+```==> Formulae
+berkeley-db
+ca-certificates
+gdbm
+gettext
+git
+grc
+libidn2
+libunistring
+libyaml
+lua
+maven
+md5sha1sum
+mpdecimal
+ncurses
+openjdk
+openssl@1.1
+pcre2
+perl
+python@3.10
+readline
+ruby
+safe
+sqlite
+tree
+vault
+vim
+wget
+xz
 
-## Request Jetbrains License
-
-You will also submit this request at: http://remedy8.dcsg.com/arsys/forms/remedy8ars/SRS%3AServiceRequestConsole/Default+Administrator+View
-
-The request type is
-* Request a Software License Key 
-
-The details are:
-Name of Software : 	Jetbrains All Products Pack
-Workstation Name : *The name of your workstation* (Can be found by openning a terminal window i.e. DEPC02X9999JGH9)
-
-
+==> Casks
+fly
+jetbrains-toolbox
+miro
+shiftit
+sublime-text
+```
 # Bash Profile
 
 # Post Setup Tasks
@@ -134,6 +159,7 @@ This script installs software that is not managed by DSG Self Service Portal.  A
 ## iTerm2 Preferences
 
 * The current backup file **com.googlecode.iterm2.plist-eb1-material** is using the **material-design-colors.itermcolors** reset color scheme
+* https://github.com/MartinSeeler/iterm2-material-design
 
 # Repos Script
 ```
