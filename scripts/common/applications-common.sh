@@ -27,6 +27,7 @@ brew install starkandwayne/cf/safe
 brew install grc
 brew install tree
 brew install wget
+brew install nvm
 
 # Utilities
 

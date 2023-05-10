@@ -37,12 +37,24 @@ GITHUB_REPOS=(
     "pdcc-table-features"
     "TAC-Calendar-Service"
     "TAC-Calendar-UI"
+    "wip-nightly-extract"
+    "reporting-mails-app"
+    "product-testing-nightly-extract"
+    "pregame-nightly-extract"
+    "po-nightly-extract"
+    "po-iteration-nightly-extract"
+    "po-insp-extract"
+    "packing-list-nightly-extract"
+    "capture-integration"
+    "compliance-nightly-extract"
+    "ecvision-edi-856-interface"
+    "ecvision-sci-interface"
 )
 
 for REPO in ${GITHUB_REPOS[@]}; do
     if [ ! -d $DEST/$REPO ]; then
         echo "Cloning ${REPO}"
-        git clone https://github.com/dsg-tech/$GITHUB_REPOS.git $DEST/$REPO
+        git clone https://github.com/dsg-tech/$REPO.git $DEST/$REPO
     else
         echo "Repo ${REPO}" exists.
     fi
